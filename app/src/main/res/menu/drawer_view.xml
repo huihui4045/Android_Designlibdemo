@@ -16,24 +16,43 @@
   -->
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <group android:checkableBehavior="single">
+    <group android:checkableBehavior="single"
+        android:id="@+id/gp1">
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_dashboard"
             android:title="Home" />
+    </group>
+
+    <group
+        android:id="@+id/gp2"
+        android:checkableBehavior="single">
         <item
             android:id="@+id/nav_messages"
             android:icon="@drawable/ic_event"
             android:title="Messages" />
+    </group>
+
+
+    <group
+        android:id="@+id/gp3"
+        android:checkableBehavior="single">
         <item
+            android:title="Friends"
             android:id="@+id/nav_friends"
-            android:icon="@drawable/ic_headset"
-            android:title="Friends" />
+            android:icon="@drawable/ic_headset"/>
+    </group>
+
+
+    <group
+        android:id="@+id/gp4"
+        android:checkableBehavior="single">
         <item
             android:id="@+id/nav_discussion"
             android:icon="@drawable/ic_forum"
             android:title="Discussion" />
     </group>
+
 
     <item android:title="Sub items">
         <menu>
@@ -45,5 +64,6 @@
                 android:title="Sub item 2" />
         </menu>
     </item>
+
 
 </menu>

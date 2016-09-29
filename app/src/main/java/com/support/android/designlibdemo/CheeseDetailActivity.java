@@ -42,9 +42,14 @@ public class CheeseDetailActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        getSupportActionBar().setTitle("自己界面");
+
         CollapsingToolbarLayout collapsingToolbar =
                 (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
-        collapsingToolbar.setTitle(cheeseName);
+
+
+
+
 
         loadBackdrop();
     }
@@ -56,7 +61,7 @@ public class CheeseDetailActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.sample_actions, menu);
+
         return true;
     }
 }

@@ -56,6 +56,8 @@ public class PullToRefreshRecyclerView extends PullToRefreshBase<RecyclerView> {
 
 	}
 
+
+
 	public void addItemDecoration(DividerItemDecoration dividerItemDecoration) {
 		refreshableView.addItemDecoration(dividerItemDecoration);
 	}
